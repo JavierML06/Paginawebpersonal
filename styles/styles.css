@@ -1,0 +1,523 @@
+/* Definición de las variables de la web */
+:root {
+    --color-principal: #805A46; /* Marron Chocolate */
+    --color-secundario: #5d9b9b; /* Naranja */
+    --color-blanco: #ffffff; /* Blanco */
+    --color-negro: #212121; /* Texto oscuro */
+    --fuente-principal: 'Playwrite HR Lijeva'; /* Fuente principal */
+    --fuente-secundaria: 'Oswald'; /* Fuente secundaria */
+    --color-fondo: #cac8c8;  /* Color Gris clarito para fondo */
+    --color-gris2: #aaa; /* Color Gris más claro*/
+    --sombra: rgba(0, 0, 0, 0.2); /* Sombra */
+    --color-estrella: #ffd700;/* Color para estrellas */
+    --color-sombra2:rgba(63, 61, 167, 0.2); /* Color de sombra azul/gris */
+}
+/* Estilos por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales de la web */
+body {
+    font-family: var(--fuente-secundaria);
+    line-height: 1.6;
+    padding: 2vw;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    height: auto;
+}
+
+h2 {
+    font-family: var(--fuente-principal);
+    margin-bottom: 1.5vw;
+    font-size: 2vw;
+    color: var(--color-principal);
+}
+
+/* Estilos de la cabecera de la web */
+header {
+    background: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 2vw 0;
+    text-align: center;
+    box-shadow: 0 0.4vw 1vw var(--sombra);
+    border-radius: 0.8vw;
+}
+
+header h1 {
+    font-family: var(--fuente-principal);
+    margin-bottom: 1vw;
+    font-size: 2.5vw;
+}
+/* Estilos del navegador de la web */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5vw;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-secundario);
+}
+/* Estilos generales de las secciones de la web */
+section {
+    margin: 2vw 0;
+    padding: 2vw;
+    background: var(--color-blanco);
+    border-radius:  0.8vw;
+    box-shadow: 0 0.2vw 1vw var(--sombra);
+}
+
+/* Estilo para el contenedor de recetas */
+.recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28vw, 1fr));
+    gap: 8.5vw;
+}
+
+.receta {
+    background: var(--color-gris);
+    padding: 1.5vw;
+    border-radius: 0.8vw;
+    box-shadow: 0 0.2vw 0.5vw var(--sombra);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.receta:hover {
+    transform: translateY(-0.5vw);
+}
+
+.receta img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0.8vw;
+}
+
+.receta h3 {
+    margin: 1vw 0;
+    font-size: 1.5vw;
+}
+
+.receta p {
+    margin: 1vw 0;
+    color: var(--color-texto-secundario);
+}
+
+.receta a {
+    display: inline-block;
+    margin-top: 1vw;
+    padding: 1vw 1.5vw;
+    background: var(--color-principal);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 0.5vw;
+    transition: background 0.3s;
+}
+
+.receta a:hover {
+    background: var(--color-secundario);
+}
+/* Estilo para el contenedor de tarjetas de receta */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+/* Estilo para el texto en negrita */
+strong{
+    color: var(--color-secundario);
+}
+/* Estilo para cada tarjeta de receta */
+.recipe-card {
+    flex: 1 1 calc(25% - 2vw);
+    box-shadow: 0 0.2vw 0.5vw var(--color-principal);
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-negro);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1vw;
+    border-radius: 0.8vw;
+}
+/* Efecto al pasar el mouse sobre la tarjeta de receta */
+.recipe-card:hover {
+    transform: translateY(-0.5vw);
+    box-shadow: 0 4px 10px var(--color-sombra2); 
+}
+/* Estilo para las imágenes dentro de las tarjetas de receta */
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilo para el modal */
+.modal {
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-contenido {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 40vw;
+    height: 80vh;
+    position: relative;
+    background-size: auto 100%;
+    background-position:top;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 1.3vw;
+}
+/* Estilo para el botón de cerrar del modal */
+.close {
+    color: var(--color-gris2);
+    align-self: flex-end; 
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin: -1vw -1vw 1vw 0;
+}
+/* Efecto al pasar el mouse o enfocar el botón de cerrar */
+.close:hover,
+.close:focus {
+    color: var(--color-negro);
+    text-decoration: none;
+}
+/* Estilo para el cuerpo del modal */
+.modal-body {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 2vw;
+    gap: 2vw;
+}
+/* Estilo para las secciones de ingredientes y proceso */
+.ingredients, .process {
+    flex: 1; 
+    min-width: 40%;
+    margin: 0 1vw;
+}
+/* Estilo para el botón de cerrar en el modal */
+.btn-close {
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+/* Efecto al pasar el mouse sobre el botón de cerrar */
+.btn-close:hover {
+    background-color: var(--color-secundario); 
+}
+/* Estilo para el texto en negrita dentro de consejos de cocina */
+#consejos-cocina ul {
+        list-style-type: none; 
+    }
+
+    #consejos-cocina strong{
+        color: var(--color-secundario); 
+    }
+/* Efectos de formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 1vw 0 0.5vw;
+}
+
+form input, form textarea {
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border: 1px solid var(--color-gris2);
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+
+form button {
+    padding: 1vw;
+    background: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: background 0.3s;
+    text-align: center; 
+}
+
+form button:hover {
+    background: var(--color-secundario);
+}
+/* Estilo para sección puntuación */
+#puntuacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Estilos para la tarjeta de  de puntuaciónrecetas */
+.puntuacion-receta {
+    margin-top: 2vw;
+    padding: 1.5vw;
+    background-color: var(--color-blanco);
+    border: 0.1vw solid var(--color-gris2);
+    border-radius: 1vw;
+    width: 45%;
+    box-shadow: 0 0 1vw var(--color-fondo);
+    margin: 2vw ; 
+}
+
+.puntuacion-receta h2{
+    font-family: var(--fuente-principal);
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: var(--color-principal);
+}
+
+.puntuacion-receta h3 {
+    color: var(--color-principal);
+    font-family:var(--fuente-principal) ;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.puntuacion-receta input[type="radio"] {
+    display: none;
+}
+
+.puntuacion-receta label {
+    font-size: 24px;
+    color: var(--color-gris2);
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.puntuacion-receta input[type="radio"]:checked + label {
+    color: var(--color-estrella);
+}
+
+.puntuacion-receta label:hover {
+    color: var(--color-estrella);
+}
+
+.puntuacion-receta textarea {
+    width: 100%;
+    height: 10vw;
+    padding: 1vw;
+    border: 0.1vw solid var(--color-gris2);
+    border-radius: 1vw;
+    margin-bottom: 2vw;
+}
+
+.puntuacion-receta button[type="submit"] {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.puntuacion-receta button[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Estilos de las estrellas para la puntuación */
+.estrellas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.estrellas input[type="radio"] {
+    display: none;
+}
+
+.estrellas label {
+    font-size: 2.4vw;
+    color: var(--color-gris2);
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+.estrellas input[type="radio"]:checked + label {
+    color: var(--color-estrella);
+}
+
+.estrellas label:hover {
+    color: var(--color-estrella);
+}
+
+/* Estilos del pie de la web */
+footer {
+    text-align: center;
+    margin-top: 2vw;
+    font-size: 0.9vw;
+    color: var(--color-texto-secundario);
+}
+/* Estilos para pantallas de hasta 1024px de ancho */
+@media (max-width: 1024px) {
+    .modal-content {
+        margin: 5% auto;
+        padding-top: 300px;
+        width: 90%; 
+        padding: 15px; 
+    }
+}
+/* Estilos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .recetas-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .recipe-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    nav ul li {
+        margin: 0 10px; 
+    }
+
+
+    .puntuacion-receta {
+        width: 100%; 
+    }
+
+    .estrellas label {
+        font-size: 20px; 
+    }
+    .modal-content {
+        margin: 5% auto;
+        width: 95%; 
+        padding: 10px; 
+    }   
+}
+/* Estilos para pantallas de hasta 480px de ancho */
+@media (max-width: 480px) {
+    
+    h2{
+        font-size: 1.9em;
+    }
+
+    header h1 {
+        font-size: 1.5em; 
+    }
+
+    .recipe-card {
+        flex: 1 1 100%; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+    
+    .modal-content {
+        margin: 5% auto;
+        width: 90%; 
+        padding: 40px; 
+        font-size: 15px;
+    }
+
+    #puntuacion{
+        width: auto;
+    }
+
+    .puntuacion-receta {
+        width: 100%; 
+    }
+
+    form input, form textarea {
+        font-size: 0.9em; 
+    }
+
+    form button {
+        font-size: 0.9em; 
+    }
+
+    .estrellas label {
+        font-size: 18px; 
+    }
+
+    .modal-content h2 {
+        font-size: 1.5em; 
+    }
+
+    .modal-content p {
+        font-size: 1em; 
+    }
+    
+    footer {
+        font-size: 1.1em; 
+        margin-top: 2vw;  
+    }
+
+    #puntuacion {
+        width: 100%; 
+    }
+
+    .puntuacion-receta {
+        width: 100%; 
+    }
+
+    .estrellas label {
+        font-size: 18px; 
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column; 
+        gap: 2vw; 
+    }
+    
+    #ingredients-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 2vw; 
+    }
+    
+    .ingredient-group {
+        display: flex;
+        flex-direction: column; 
+        gap: 0.5vw; 
+    }
+    
+    .ingredient-group label {
+        text-align: left; 
+    }
+    
+    .ingredient-group input {
+        padding: 1vw;
+        font-size: 1em;
+        border-radius: 0.5vw;
+    }
+}

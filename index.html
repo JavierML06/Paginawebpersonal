@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Picasso</title>
+    <link rel="icon" href="./src/favicon.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header de la página web -->
+    <header>
+        <!-- Titulo de la página web -->
+        <h1>Recetas Deliciosas</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#recetas"> Recetas </a>
+                </li>
+                <li>
+                    <a href="#consejos-cocina">Consejos de Cocina</a>
+                </li>
+                <li>
+                    <a href="#sobre"> Sobre Nosotros </a>
+                </li>
+                <li>
+                    <a href="#contacto"> Contacto </a>
+                </li>
+                <li>
+                    <a href="#lista-compra"> Lista Compras </a>
+                </li>
+                <li>
+                    <a href="#propuesta-receta">Propuestas de recetas que debemos incluir</a>
+                </li>
+                <li>
+                    <a href="#puntuacion"> Puntuacion de las recetas </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección dedicada a las recetas -->
+    <section id="recetas">
+        <!-- Contenedor para los recuadros de recetas -->
+        <section class="recipe-container">
+            <a href="#modal1" class="recipe-card">
+                <img alt="Imagen de un plato de pasta con salsa de tomate y albahaca" src="./src/pasta.jpg" />
+                <h2>Pasta Italiana</h2>
+            </a>
+
+            <a href="#modal2" class="recipe-card">
+                <img alt="Imagen de una ensalada" src="./src/ensalada.jpg" />
+                <h2>Ensalada</h2>
+            </a>
+
+            <a href="#modal3" class="recipe-card">
+                <img alt="Imagen de un plato de sushi " src="./src/shushi.jpg" />
+                <h2>Shushi</h2>
+            </a>
+
+            <a href="#modal4" class="recipe-card">
+                <img alt=" Imagen tarta 3 chocolates" src="./src/treschocolates.jpg" />
+                <h2>Tarta de 3 Chocolates</h2>
+            </a>
+        </section>
+        <!-- Modales para cada receta -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h2>Pasta Italiana</h2>
+                <div class="modal-body">
+                    <div class="ingredients">
+                        <h3>Ingredientes para 2 personas:</h3>
+                        <ul>
+                            <li>100-150 g de pasta (espaguetis, penne, o tu elección)</li>
+                            <li>1 cucharada de aceite de oliva</li>
+                            <li>1 diente de ajo, picado</li>
+                            <li>200 g de tomate triturado (puede ser enlatado)</li>
+                            <li>Sal al gusto</li>
+                            <li>Pimienta al gusto</li>
+                            <li>Albahaca fresca (opcional)</li>
+                            <li>Queso parmesano rallado (opcional)</li>
+                        </ul>
+                    </div>
+                    <div class="process">
+                        <h3>Proceso de Creación:</h3>
+                        <p>
+                            <strong>Cocinar la Pasta:</strong> En una olla grande, hierve agua con sal.
+                            Agrega la pasta y cocina según las instrucciones del paquete hasta que esté al dente. Luego,
+                            escúrrela y reserva un poco del agua de cocción.
+                        </p>
+                        <p>
+                            <strong>Preparar la Salsa:</strong> En una sartén grande, calienta el aceite de oliva a
+                            fuego medio.
+                            Agrega el ajo picado y sofríe durante 1-2 minutos hasta que esté dorado.
+                        </p>
+                        <p>
+                            <strong>Agregar Tomate:</strong> Incorpora el tomate triturado a la sartén. Cocina a fuego
+                            lento durante unos 10-15 minutos,
+                            removiendo ocasionalmente. Agrega sal y pimienta al gusto.
+                        </p>
+                        <p>
+                            <strong>Mezclar la Pasta y la Salsa:</strong> Añade la pasta cocida a la sartén con la
+                            salsa.
+                            Si la salsa está muy espesa, puedes añadir un poco del agua de cocción reservada para
+                            aligerarla.
+                            Mezcla bien para que la pasta se cubra con la salsa.
+                        </p>
+                        <p>
+                            <strong>Servir:</strong> Sirve la pasta caliente, decorada con albahaca fresca y
+                            espolvoreada con queso parmesano rallado si lo deseas.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="btn-close">Salir</a>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h2>Ensalada Saludable</h2>
+                <div class="modal-body">
+                    <div class="ingredients">
+                        <h3>Ingredientes para 2 personas:</h3>
+                        <ul>
+                            <li>Lechuga fresca (2-3 hojas)</li>
+                            <li>Tomate cherry (1 taza)</li>
+                            <li>Pepino (1/2)</li>
+                            <li>Cebolla roja (1/4)</li>
+                            <li>Queso feta (100g)</li>
+                            <li>Aderezo de vinagreta (2-3 cucharadas)</li>
+                            <li>Aceitunas negras (1/4 taza)</li>
+                            <li>Pimiento rojo (1/2)</li>
+                        </ul>
+                    </div>
+                    <div class="process">
+                        <h3>Proceso de Creación:</h3>
+                        <p>Preparación de la Ensalada:</p>
+                        <p><strong>Lavar y cortar los ingredientes</strong> Lava las hojas de lechuga, el tomate cherry,
+                            el pepino y la cebolla roja. Corta todos los ingredientes en trozos pequeños y colócalos en
+                            un tazón grande.</p>
+                        <p><strong>Preparar el aderezo</strong> En un tazón pequeño, mezcla el aderezo de vinagreta con
+                            un poco de aceite de oliva y vinagre. Añade sal y pimienta al gusto.</p>
+                        <p><strong>Mezclar la ensalada</strong> Vierte el aderezo sobre la ensalada y mezcla bien todos
+                            los ingredientes. Asegúrate de que todos los ingredientes estén bien cubiertos con el
+                            aderezo.</p>
+                        <p><strong>Agregar los ingredientes finales</strong> Agrega las aceitunas negras y el queso feta
+                            a la ensalada. Mezcla bien para que todos los ingredientes estén bien distribuidos.</p>
+                        <p><strong>Servir</strong> Sirve la ensalada fresca y lista para disfrutar. Puedes decorarla con
+                            un poco de pimiento rojo picado para darle un toque de color.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-close">Salir</a>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <h2>Shushi</h2>
+                <div class="modal-body">
+                    <div class="ingredients">
+                        <h3>Ingredientes para 2 personas:</h3>
+                        <ul>
+                            <li>Arroz japonés (1 taza)</li>
+                            <li>Nori (algas secas) (4-6 hojas)</li>
+                            <li>Atún fresco (120g)</li>
+                            <li>Salmon fresco (120g)</li>
+                            <li>Calabacín (1/2)</li>
+                            <li>Pimiento rojo (1/2)</li>
+                            <li>Cebolla verde (1/4)</li>
+                            <li>Wasabi (1 cucharadita)</li>
+                            <li>Jengibre (1 cucharadita)</li>
+                            <li>Vinagre de arroz (2 cucharadas)</li>
+                            <li>Aceite de sésamo (1 cucharada)</li>
+                        </ul>
+                    </div>
+                    <div class="process">
+                        <h3>Proceso de Creación:</h3>
+                        <p>Preparación del Sushi:</p>
+                        <p><strong>Paso 1: Preparar el arroz japonés</strong> Lava el arroz japonés y cocina según las
+                            instrucciones del paquete. Deja enfriar.</p>
+                        <p><strong>Paso 2: Preparar el nori</strong> Corta las hojas de nori en trozos pequeños y
+                            colócalos en un tazón.</p>
+                        <p><strong>Paso 3: Preparar los ingredientes</strong> Corta el atún fresco, el salmón fresco, el
+                            calabacín, el pimiento rojo y la cebolla verde en trozos pequeños.</p>
+                        <p><strong>Paso 4: Armar el sushi</strong> Coloca una hoja de nori en una superficie plana y
+                            unta una capa fina de arroz japonés en el centro de la hoja. Agrega los ingredientes en el
+                            centro del arroz y enrolla el sushi utilizando un rodillo de sushi.</p>
+                        <p><strong>Paso 5: Cortar el sushi</strong> Corta el sushi en rodajas finas utilizando un
+                            cuchillo afilado.</p>
+                        <p><strong>Paso 6: Servir</strong> Sirve el sushi con wasabi, jengibre y vinagre de arroz.
+                            Decora con aceite de sésamo y cebolla verde picada.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-close">Salir</a>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <h2>Tarta de 3 chocolates</h2>
+                <div class="modal-body">
+                    <div class="ingredients">
+                        <h3>Ingredientes para la tarta:</h3>
+                        <ul>
+                            <li>200g de chocolate negro (70% cacao)</li>
+                            <li>150g de chocolate con leche</li>
+                            <li>100g de chocolate blanco</li>
+                            <li>1 taza de azúcar granulada</li>
+                            <li>1/2 taza de harina de trigo</li>
+                            <li>1/2 cucharadita de polvo de hornear</li>
+                            <li>1/4 cucharadita de sal</li>
+                            <li>1/2 taza de mantequilla derretida</li>
+                            <li>2 huevos grandes</li>
+                            <li>1 cucharadita de extracto de vainilla</li>
+                        </ul>
+                    </div>
+                    <div class="process">
+                        <h3>Proceso de Creación:</h3>
+                        <p>Para hacer una tarta de 3 chocolates, sigue estos pasos:</p>
+                        <p><strong>Paso 1: Preparar la base de la tarta</strong> Precalienta el horno a 180°C. En un
+                            tazón grande, mezcla la harina de trigo, el polvo de hornear y la sal. Agrega la mantequilla
+                            derretida y mezcla hasta que se forme una masa homogénea.</p>
+                        <p><strong>Paso 2: Preparar el relleno de chocolate</strong> En un tazón separado, derrite el
+                            chocolate negro, el chocolate con leche y el chocolate blanco en el microondas o en una olla
+                            a baño maría. Deja enfriar ligeramente.</p>
+                        <p><strong>Paso 3: Mezclar el relleno de chocolate con los huevos</strong> En un tazón grande,
+                            bate los huevos y el azúcar granulada hasta que estén espumosos. Agrega el extracto de
+                            vainilla y mezcla bien. Incorpora el relleno de chocolate derretido y mezcla hasta que esté
+                            bien combinado.</p>
+                        <p><strong>Paso 4: Verter la mezcla en la base de la tarta</strong> Vierte la mezcla de
+                            chocolate en la base de la tarta preparada en el paso 1. Alisa la superficie con una
+                            espátula.</p>
+                        <p><strong>Paso 5: Hornear la tarta</strong> Hornea la tarta durante 35-40 minutos, o hasta que
+                            esté firme al tacto y un cuchillo insertado en el centro salga limpio. Deja enfriar
+                            completamente antes de servir.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-close">Salir</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sección dedicada a consejos de cocina -->
+    <section id="consejos-cocina">
+        <h2>Consejos de Cocina</h2>
+        <p>
+            Mejora tus habilidades culinarias con estos consejos útiles. Desde la
+            elección de ingredientes frescos hasta técnicas de cocción y
+            presentación de platos, aquí encontrarás todo lo que necesitas para
+            convertirte en un mejor cocinero.
+        </p>
+        <ul>
+            <li>
+                <strong>Elige ingredientes frescos:</strong> Siempre selecciona frutas
+                y verduras de temporada para obtener el mejor sabor y calidad.
+            </li>
+            <li>
+                <strong>Prepara tus ingredientes:</strong> Antes de comenzar a
+                cocinar, asegúrate de tener todos los ingredientes preparados y
+                medidos para facilitar el proceso.
+            </li>
+            <li>
+                <strong>Domina las técnicas básicas:</strong> Aprende a picar, saltear
+                y hervir correctamente para mejorar tus platos.
+            </li>
+            <li>
+                <strong>Usa hierbas y especias:</strong> Experimenta con diferentes
+                hierbas y especias para realzar el sabor de tus comidas.
+            </li>
+            <li>
+                <strong>Presentación de platos:</strong> Dedica tiempo a la
+                presentación de tus platos; un buen emplatado puede hacer que incluso
+                los platos más simples se vean gourmet.
+            </li>
+            <li>
+                <strong>Prueba y ajusta:</strong> No tengas miedo de probar tus platos
+                mientras cocinas y ajustar los sabores según tu preferencia.
+            </li>
+            <li>
+                <strong>Organiza tu espacio de trabajo:</strong> Mantén tu cocina
+                ordenada y organizada para trabajar de manera más eficiente.
+            </li>
+        </ul>
+    </section>
+    <!-- Sección sobre la empresa -->
+    <section id="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>Bienvenidos a <b>Recetas Picasso</b>.</p>
+        <p>
+            Somos un equipo de apasionados de la cocina que nos dedicamos a crear
+            recetas deliciosas.
+        </p>
+        <p>
+            En <b>Recetas Picasso</b>, nuestra misión es promover la cultura
+            culinaria a través de una cuidadosa selección de recetas que celebran la
+            diversidad y la riqueza de la gastronomía.
+        </p>
+        <p>
+            Nos dedicamos a ofrecer un espacio donde los amantes de la cocina, tanto
+            principiantes como expertos, puedan encontrar inspiración y recursos
+            para enriquecer su experiencia culinaria. Nuestro equipo está compuesto
+            por profesionales y entusiastas de la cocina que comparten una profunda
+            pasión por la alimentación y la creación de platos excepcionales. Nos
+            esforzamos por proporcionar recetas accesibles y prácticas, manteniendo
+            siempre un alto estándar de calidad y presentación.
+        </p>
+        <p>
+            Cada receta que compartimos ha sido probada y perfeccionada para
+            garantizar resultados satisfactorios.
+        </p>
+        <p>
+            En <b>Recetas Picasso</b>, valoramos la importancia de la comunidad.
+            Creemos que la cocina es una forma de compartir y conectar con los
+            demás.
+        </p>
+        <p>
+            Por ello, invitamos a nuestros visitantes a interactuar, compartir sus
+            experiencias y adaptar nuestras recetas a sus preferencias personales.
+            Agradecemos su visita y esperamos que encuentren en nuestro sitio una
+            fuente de inspiración que los motive a explorar, experimentar y
+            disfrutar de la cocina en su máxima expresión.
+        </p>
+        <p>Atentamente,</p>
+        <p>El equipo de <b>Recetas Picasso</b></p>
+    </section>
+    <!-- Sección de contacto  -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" required
+                pattern="([A-Za-zÁÉÍÓÚáéíóúÑñ]+(?:\s|-|[A-Za-zÁÉÍÓÚáéíóúÑñ]+)*[A-Za-zÁÉÍÓÚáéíóúÑñ]+)"
+                title="Introduce tu nombre completo (solo letras, espacios y guiones, mínimo 2 palabras)"
+                placeholder="Ej: Juan Pérez" />
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}"
+                title="Introduce un correo electrónico válido" placeholder="Ej: ejemplo@dominio.com" />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required pattern=".{5,200}"
+                title="El asunto debe tener entre 5 y 200 caracteres" placeholder="Desarrollo del mensaje"></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+    <!-- Sección para la lista de compras -->
+    <section id="lista-compra">
+        <h2>Crear una Lista de Compras</h2>
+        <form>
+            <div id="ingredients-container">
+                <div class="ingredient-group">
+                    <label for="ingrediente-1">Ingrediente</label>
+                    <input type="text" id="ingredient-1" name="ingredientes[]" placeholder="Ingrediente" required>
+                    <label for="cantidad-1">Cantidad</label>
+                    <input type="number" id="cantidad-1" name="cantidades[]" placeholder="Cantidad" min="1" step="1" required>
+                </div>
+                <div class="ingredient-group">
+                    <label for="ingrediente-2">Ingrediente</label>
+                    <input type="text" id="ingredient-2" name="ingredientes[]" placeholder="Ingrediente" required>
+                    <label for="cantidad-2">Cantidad</label>
+                    <input type="number" id="cantidad-2" name="cantidades[]" placeholder="Cantidad" min="1" step="1" required>
+                </div>
+                <div class="ingredient-group">
+                    <label for="ingrediente-3">Ingrediente</label>
+                    <input type="text" id="ingredient-3" name="ingredientes[]" placeholder="Ingrediente" required>
+                    <label for="cantidad-3">Cantidad</label>
+                    <input type="numer" id="cantidad-3" name="cantidades[]" placeholder="Cantidad" min="1" step="1" required>
+                </div>
+            </div>
+            <button type="submit">Generar lista de compras</button>
+        </form>
+    </section>
+    <!-- Sección para propuestas de recetas -->
+    <section id="propuesta-receta">
+        <Form>
+            <h2>Propuestas de recetas que debemos incluir</h2>
+            <label for="recipe-name">Nombre de la receta</label>
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="Ejemplo: Tarta de manzana" required pattern="[A-Za-zÀ-ÿ0-9 .,]{3,50}">
+            <label for="ingredients">Ingredientes</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Lista los ingredientes separados por comas" required pattern="[A-Za-zÀ-ÿ0-9.,\n ]{10,500}"></textarea>
+            <label for="instructions">Instrucciones de preparación</label>
+            <textarea id="instructions" name="instructions" placeholder="Describe los pasos de la receta" required pattern="[A-Za-zÀ-ÿ0-9.,\n ]{20,1000}"></textarea>
+            <label for="image">Imagen de la receta</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <button type="submit">Enviar propuesta</button>
+        </Form>
+    </section>
+    <!-- Sección para la puntuación de recetas -->
+    <section id="puntuacion">
+        <form class="puntuacion-receta">
+            <h2>Puntuacion de las recetas.</h2>
+            <h3>Puntuación receta Pasta Italiana:</h3>
+            <div class="estrellas">
+                <input type="radio" id="estrella-1-1" name="puntuacion" value="1">
+                <label for="estrella-1">★</label>
+                <input type="radio" id="estrella-1-2" name="puntuacion" value="2">
+                <label for="estrella-2">★★</label>
+                <input type="radio" id="estrella-1-3" name="puntuacion" value="3">
+                <label for="estrella-3">★★★</label>
+                <input type="radio" id="estrella-1-4" name="puntuacion" value="4">
+                <label for="estrella-4">★★★★</label>
+                <input type="radio" id="estrella-1-5" name="puntuacion" value="5">
+                <label for="estrella-5">★★★★★</label>
+            </div>
+            <textarea id="comentario" name="comentario" pattern=".{20,1000}" required
+                placeholder="Comentario sobre la receta"></textarea>
+            <button type="submit">Enviar puntuación</button>
+        </form>
+        <form class="puntuacion-receta">
+            <h2>Puntuacion de las recetas.</h2>
+            <h3>Puntuación receta Ensalada fresca:</h3>
+            <div class="estrellas">
+                <input type="radio" id="estrella-2-1" name="puntuacion" value="1">
+                <label for="estrella-1">★</label>
+                <input type="radio" id="estrella-2-2" name="puntuacion" value="2">
+                <label for="estrella-2">★★</label>
+                <input type="radio" id="estrella-2-3" name="puntuacion" value="3">
+                <label for="estrella-3">★★★</label>
+                <input type="radio" id="estrella-2-4" name="puntuacion" value="4">
+                <label for="estrella-4">★★★★</label>
+                <input type="radio" id="estrella-2-5" name="puntuacion" value="5">
+                <label for="estrella-5">★★★★★</label>
+            </div>
+            <textarea id="comentario" name="comentario" pattern=".{20,1000}" required
+                placeholder="Comentario sobre la receta"></textarea>
+            <button type="submit">Enviar puntuación</button>
+        </form>
+        <form class="puntuacion-receta">
+            <h2>Puntuacion de las recetas.</h2>
+            <h3>Puntuación receta Shushi:</h3>
+            <div class="estrellas">
+                <input type="radio" id="estrella-3-1" name="puntuacion" value="1">
+                <label for="estrella-1">★</label>
+                <input type="radio" id="estrella-3-2" name="puntuacion" value="2">
+                <label for="estrella-2">★★</label>
+                <input type="radio" id="estrella-3-3" name="puntuacion" value="3">
+                <label for="estrella-3">★★★</label>
+                <input type="radio" id="estrella-3-4" name="puntuacion" value="4">
+                <label for="estrella-4">★★★★</label>
+                <input type="radio" id="estrella-3-5" name="puntuacion" value="5">
+                <label for="estrella-5">★★★★★</label>
+            </div>
+            <textarea id="comentario" name="comentario" pattern=".{20,1000}" required
+                placeholder="Comentario sobre la receta"></textarea>
+            <button type="submit">Enviar puntuación</button>
+        </form>
+        <form class="puntuacion-receta">
+            <h2>Puntuacion de las recetas.</h2>
+            <h3>Puntuación receta Tarta 3 Chocolates:</h3>
+            <div class="estrellas">
+                <input type="radio" id="estrella-4-1" name="puntuacion" value="1">
+                <label for="estrella-1">★</label>
+                <input type="radio" id="estrella-4-2" name="puntuacion" value="2">
+                <label for="estrella-2">★★</label>
+                <input type="radio" id="estrella-4-3" name="puntuacion" value="3">
+                <label for="estrella-3">★★★</label>
+                <input type="radio" id="estrella-4-4" name="puntuacion" value="4">
+                <label for="estrella-4">★★★★</label>
+                <input type="radio" id="estrella-4-5" name="puntuacion" value="5">
+                <label for="estrella-5">★★★★★</label>
+            </div>
+            <textarea id="comentario" name="comentario" pattern=".{20,1000}" required
+                placeholder="Comentario sobre la receta"></textarea>
+            <button type="submit">Enviar puntuación</button>
+        </form>
+    </section>
+    <!-- Footer de la página -->
+    <footer>
+        <p>© Página Creada por Javier Montiel López</p>
+    </footer>
+    <!-- Script para que funcione el clic en las estrellas de puntuación -->
+    <script>
+        const estrellas = document.querySelectorAll('.estrellas');
+        estrellas.forEach((estrella) => {
+            estrella.addEventListener('click', (e) => {
+                if (e.target.tagName === 'LABEL') {
+                    const input = e.target.previousElementSibling;
+                    input.checked = true;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
